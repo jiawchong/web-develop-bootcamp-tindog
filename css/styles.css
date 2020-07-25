@@ -1,27 +1,15 @@
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HTML Elements~~~~~~~~~~~~~~~~~~~~~~~~ */
+h1, h2, h3 {
+    font-family: "Montserrat";
+}
 body{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
+    text-align: center;
 
 }
 
-h1 {
-    font-size: 3.5rem;
-    font-weight: 900;
-    line-height: 1.5;
-    padding: 15% 0 10% 0;
-}
-h2 {
-    font-size: 3rem;
-    font-family: 'Montserrat';
-    font-weight: 700;
-    line-height: 1.5;
-
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 1.5rem
-}
 p {
     line-height: 1.3rem;
     color: grey;
@@ -34,8 +22,39 @@ button{
     margin-right: 20px;
 }
 
+/* Headings and texts*/
+
+.big-heading {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.5;
+    padding: 15% 0 10% 0;
+}
+.medium-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+
+}
+
+.small-heading {
+    font-weight: 700;
+    font-size: 1.5rem
+}
+
+.price-heading{
+    font-weight: 500;
+    font-size:2.5rem;
+}
+
+.small-text{
+    font-size: 1rem;
+}
+
+
 /* IDS */
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Title Section~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #title{
     background: #ff4c68;
     color: white;
@@ -43,53 +62,11 @@ button{
     z-index: 1;
 
 }
-#features{
-    text-align: center;
-    padding: 7%  0;
-    background-color: white;
-    position: relative;
-    z-index: 1;
+#title .container-fluid{
+    padding: 0 15% 7%;
+    text-align: left;
 }
-
-#testimonials{
-    background-color: #ef8172;
-    color: white;
-    text-align: center;
-}
-
-#press{
-    background-color: #ef8172;
-    text-align: center;
-}
-#pricing{
-    padding: 7% 15%;
-    text-align: center;
-}
-
-#cta{
-    background-color: #ff4c68;
-    text-align: center;
-    padding: 7% 17%;
-    color: white;
-}
-
-#footer{
-    text-align: center;
-    padding: 7% 17%;
-    background-color: white;
-}
-
-/* CLASS  */
-
-.container-fluid{
-    padding:4% 15% 7%;
-}
-
-
-.rotated {
-    transform: rotate(35deg); /* Equal to rotateZ(45deg) */
-  }
-
+/* Navigation bar */
 .navbar-brand{
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.5rem;
@@ -105,8 +82,7 @@ button{
 }
 
 .nav-link{
-    font-size: 1.2rem;
-    font-family: "Montserrat";
+    font-size: 1.3rem;
     font-weight:400
 }
 
@@ -118,26 +94,51 @@ button{
 }
 
 
-.fas:hover{
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Features Sections~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#features{
+    padding: 7%  0;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.pink-icon{
+    color: #ef8172;
+    margin: 20px 0;
+}
+
+.pink-icon:hover{
     color: #ff4c58;
 }
-  
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Testimonial section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`*/
+#testimonials{
+    background-color: #ef8172;
+    color: white;
+}
+
 .testimonial-image{
     border-radius: 50%;
     width: 8%;
     margin-top: 3%
 }
 
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Press section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#press{
+    background-color: #ef8172;
+}
+
 .press-image{
     width:12%;
     margin: 3%;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Pricing section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-.carousel-inner{
-    padding: 7% 15%;
-
+.card-block{
+    padding: 5%;
 }
-
 
 
 .month{
@@ -146,34 +147,39 @@ button{
     font-size: 2rem;
 }
 
-
-
-.card-block{
-    padding: 5%;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Call to action section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#cta{
+    background-color: #ff4c68;
+    padding: 7% 17%;
+    color: white;
 }
 
-.cta-title{
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    margin-bottom: 5%;
-}
-
-.pink-icon{
-    color: #ef8172;
-    margin: 20px 0;
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Footer section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#footer{
+    padding: 7% 17%;
+    background-color: white;
 }
 
 .logo{
     margin: 20px 10px;
 }
 
-.copyright{
-    font-size: 1rem;
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~General CLASS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.container-fluid{
+    padding:7% 15%;
 }
 
+.rotated {
+    transform: rotate(35deg); /* Equal to rotateZ(45deg) */
+  }
 
-/* CSS breakpoint */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~CSS breakpoint~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 @media (max-width: 1028px){
     .title-image{
         position: static;
